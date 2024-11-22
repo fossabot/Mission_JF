@@ -25,7 +25,7 @@ jobs:
           # Ping the server
           jf rt ping
           # build with maven
-          jf mv --no-transfer-progress verify
+          jf rt mvn --no-transfer-progress verify
           # Collect environment variables for the build
           jf rt bce
           # Collect VCS details from git and add them to the build
