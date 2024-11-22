@@ -1,7 +1,6 @@
 name: "Setup JFrog CLI Example"
-on: push:
-        branches:
-            - main
+on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +11,7 @@ jobs:
         uses: jfrog/setup-jfrog-cli@v4
         env:
           # JFrog platform url (for example: https://acme.jfrog.io)
-          JF_URL: ${{ secrets.JF_URL }}
+          JF_URL: ${{ vars.JF_URL }}
 
           # JFrog Platform access token
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
@@ -25,8 +24,8 @@ jobs:
         run: |
           # Ping the server
           jf rt ping
-          # build with maven
-          jf mvn --no-transfer-progress verify
+          # scan
+          jf s "./target/*.jar" 
           # Collect environment variables for the build
           jf rt bce
           # Collect VCS details from git and add them to the build
