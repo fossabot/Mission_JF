@@ -1,4 +1,4 @@
-name: "Main / Pull requests build"
+name: "JF jar build"
 on:
     pull_request:
         paths-ignore:
