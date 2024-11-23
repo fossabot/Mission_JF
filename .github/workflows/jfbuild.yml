@@ -26,10 +26,11 @@ jobs:
           jf rt ping
           # scan
           #jf s "./target/*.jar" 
-          jf bs "Setup JFrog CLI Example" 19
+          
           # Collect environment variables for the build
           jf rt bce
           # Collect VCS details from git and add them to the build
           jf rt bag
           # Publish build info
           jf rt bp
+          jf bs "Setup JFrog CLI Example" 19
