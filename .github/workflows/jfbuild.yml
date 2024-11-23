@@ -33,4 +33,4 @@ jobs:
           jf rt bag
           # Publish build info
           jf rt bp
-          jf bs "Setup JFrog CLI Example" 19
+          jf bs Setup-JFrog-CLI-Example 19
