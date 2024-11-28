@@ -33,5 +33,5 @@ jobs:
           # Publish build info
           jf rt bp
           # Build Scan
-          jf rt bs
+          jf build-scan
       
