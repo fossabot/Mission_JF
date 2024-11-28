@@ -32,6 +32,7 @@ jobs:
           jf rt bce
           jf docker pull trialxi7hw0.jfrog.io/docker-ingress/webgoat
           docker ps > echo
+          echo 'this is it'
           docker tag docker-ingress/webgoat:latest trialxi7hw0.jfrog.io/m1-release-docker/webgoat:latest
           jf docker push trialxi7hw0.jfrog.io/m1-release-docker/webgoat
           
