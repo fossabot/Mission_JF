@@ -26,6 +26,7 @@ jobs:
           jf rt ping
           # scan
           #jf s "./target/*.jar" 
+          
           # Collect environment variables for the build
           jf rt bce
           jf docker pull trialxi7hw0.jfrog.io/docker-ingress/webgoat
