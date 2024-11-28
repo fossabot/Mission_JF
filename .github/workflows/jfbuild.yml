@@ -32,4 +32,6 @@ jobs:
           jf rt bag
           # Publish build info
           jf rt bp
+          # Build Scan
+          jf rt bs
       
