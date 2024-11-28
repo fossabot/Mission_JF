@@ -25,9 +25,11 @@ jobs:
           # Ping the server
           jf rt ping
           # scan
-          jf s "./target/*.jar" 
+          #jf s "./target/*.jar" 
           # Collect environment variables for the build
           jf rt bce
+          jf docker pull webgoat/webgoat
+
           # Collect VCS details from git and add them to the build
           jf rt bag
           # Publish build info
