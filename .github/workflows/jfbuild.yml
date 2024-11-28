@@ -28,7 +28,7 @@ jobs:
           #jf s "./target/*.jar" 
           # Collect environment variables for the build
           jf rt bce
-          jf docker pull https://hub.docker.com/webgoat/webgoat
+          jf docker pull hub.docker.com/webgoat/webgoat
 
           # Collect VCS details from git and add them to the build
           jf rt bag
