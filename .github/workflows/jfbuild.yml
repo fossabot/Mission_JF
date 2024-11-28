@@ -29,7 +29,6 @@ jobs:
           # Collect environment variables for the build
           jf rt bce
           jf docker pull trialxi7hw0.jfrog.io/docker-ingress/webgoat
-
           # Collect VCS details from git and add them to the build
           jf rt bag
           # Publish build info
