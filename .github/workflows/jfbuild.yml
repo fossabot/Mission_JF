@@ -24,6 +24,7 @@ jobs:
         run: |
           # Ping the server
           jf rt ping
+          
           # scan
           #jf s "./target/*.jar" 
           
