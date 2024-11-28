@@ -31,6 +31,7 @@ jobs:
           # Collect environment variables for the build
           jf rt bce
           jf docker pull trialxi7hw0.jfrog.io/docker-ingress/webgoat
+          echo docker ls
           docker tag docker-ingress/webgoat:latest trialxi7hw0.jfrog.io/m1-release-docker/webgoat:latest
           jf docker push trialxi7hw0.jfrog.io/m1-release-docker/webgoat
           
