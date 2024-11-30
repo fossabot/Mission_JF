@@ -33,9 +33,9 @@ jobs:
           jf docker pull trialj4xtng.jfrog.io/docker-ingress/webgoat
           docker ps > echo
           echo 'this is it'
-          docker tag trialj4xtng.jfrog.io/docker-ingress/webgoat:latest trialj4xtng.jfrog.io/m1-release-docker/webgoat:latest
+          docker tag trialj4xtng.jfrog.io/m1-local-docker-ingress/webgoat:latest trialj4xtng.jfrog.io/m1-local-docker-release/webgoat:latest
           
-          jf docker push trialj4xtng.jfrog.io/m1-release-docker/webgoat
+          jf docker push trialj4xtng.jfrog.io/m1-docker-release/webgoat
           
           # Collect VCS details from git and add them to the build
           jf rt bag
