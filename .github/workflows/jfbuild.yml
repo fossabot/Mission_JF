@@ -31,7 +31,7 @@ jobs:
           # Collect environment variables for the build
           jf rt bce
           jf docker pull trialj4xtng.jfrog.io/m1-local-docker-ingress/webgoat:latest
-          docker ps > echo
+          docker ps 
           echo 'this is HERE_'
           docker tag trialj4xtng.jfrog.io/m1-local-docker-ingress/webgoat:latest trialj4xtng.jfrog.io/m1-local-docker-release/webgoat:latest
           
