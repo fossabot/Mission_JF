@@ -36,6 +36,7 @@ jobs:
           #docker tag trialj4xtng.jfrog.io/m1-local-docker-ingress/webgoat:latest trialj4xtng.jfrog.io/m1-local-docker-release/webgoat:latest
           
           #jf docker push trialj4xtng.jfrog.io/m1-local-docker-release/webgoat
+          jf mvn-config
           jf mvn compile
           # Collect VCS details from git and add them to the build
           jf rt bag
