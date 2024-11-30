@@ -33,7 +33,7 @@ jobs:
           jf docker pull trialj4xtng.jfrog.io/m1-local-docker-ingress/webgoat
           docker ps > echo
           echo 'this is HERE'
-          jf docker tag trialj4xtng.jfrog.io/m1-local-docker-ingress/webgoat:latest trialj4xtng.jfrog.io/m1-local-docker-release/webgoat:latest
+          jf docker tag webgoat:latest trialj4xtng.jfrog.io/m1-local-docker-release/webgoat:latest
           
           jf docker push trialj4xtng.jfrog.io/m1-local-docker-release/webgoat
           
